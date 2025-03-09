@@ -12,7 +12,7 @@
         />
         <link rel="stylesheet" href="./src/styles.css" />
     </head>
-    <body class="bg-[#111111] w-screen h-screen m-0 p-0 overflow-hidden">
+    <body class="bg-[#111111] w-screen h-screen m-0 p-0">
         <div
             class="h-15 bg-[#111111] w-screen !p-[10px] flex flex-row items-center justify-end"
         >
@@ -56,16 +56,109 @@
             </div>
         </div>
         <div class="w-screen h-[1px] bg-[#333]"></div>
+        <!-- ^^ Divider ^^ -->
 
         <!-- Body Starts -->
-        <div
-            class="w-full h-[calc(100%-3.75rem)] flex items-center justify-center"
-        >
-            <h1
-                class="text-white font-[Poppins] !font-[550] !text-[80px] m-0 p-0"
+        <div class="sections flex flex-col gap-[3px]">
+            <!-- <div class="w-full h-100 !mt-10 flex items-center justify-center">
+                <h1
+                    class="text-white font-[Poppins] !font-[550] !text-[80px] m-0 p-0"
+                >
+                    Super Epic Animation Soon 👀
+                </h1>
+            </div> -->
+
+            <div
+                class="w-full h-100 flex items-center justify-center overflow-hidden relative !border-2 !border-solid !border-yellow-300"
             >
-                Home
-            </h1>
+                <div
+                    class="absolute inset-0 bg-[linear-gradient(transparent_0%,rgba(255,255,0,0.09)_15%,rgb(255,255,0)_500%)] z-8"
+                ></div>
+
+                <div class="z-20 flex flex-col items-center justify-center">
+                    <img
+                        src="./images/hive_logo.png"
+                        alt="Hive Logo"
+                        id="logo"
+                        class="scale-48 hover:drop-shadow-[0_0_80px_rgba(214,168,54,0.5)] transition-all duration-500 ease-out will-change-transform"
+                    />
+
+                    <button
+                        id="hivebtn"
+                        class="z-30 bg-[linear-gradient(transparent_0%,rgba(255,255,0,0.09)_50%,rgb(255,255,0)_500%)] !font-[500] cursor-pointer hover:brightness-150 hover:scale-115 !font-[Poppins] !text-[18px] !text-[#fffbc7] hover:-translate-y-3 !border-2 !border-solid !border-yellow-300 !rounded-[12px] w-[150px] h-[60px] bg-transparent absolute top-[70%] opacity-0 invisible transition-all duration-500 ease-out"
+                    >
+                        Hive Maps
+                    </button>
+                </div>
+
+                <img
+                    src="./images/hive_lobby.png"
+                    alt="Hive Lobby"
+                    class="w-full h-full -translate-y-1/6 blur-sm absolute opacity-15 z-8"
+                />
+            </div>
+
+            <div
+                class="w-full h-100 flex items-center justify-center overflow-hidden relative !border-2 !border-solid !border-yellow-600"
+            >
+                <div
+                    class="absolute inset-0 bg-[linear-gradient(transparent_0%,rgba(208,135,0,0.05)_15%,#d08700_500%)] z-8"
+                ></div>
+
+                <div class="z-20 flex flex-col items-center justify-center">
+                    <img
+                        src="./images/hypixel_logo.png"
+                        alt="Hypixel Logo"
+                        id="hypixel"
+                        class="scale-160 hover:drop-shadow-[0_0_30px_rgba(208,135,0,0.5)] transition-all duration-500 ease-out will-change-transform"
+                    />
+
+                    <button
+                        id="hypixelbtn"
+                        class="z-30 bg-[linear-gradient(transparent_0%,rgba(208,135,0,0.09)_50%,#d08700_500%)] !font-[500] cursor-pointer hover:brightness-150 hover:scale-115 !font-[Poppins] !text-[18px] !text-[#fffbc7] hover:-translate-y-3 !border-2 !border-solid !border-yellow-600 !rounded-[12px] w-[150px] h-[60px] bg-transparent absolute top-[70%] opacity-0 invisible transition-all duration-500 ease-out"
+                    >
+                        Hypixel Maps
+                    </button>
+                </div>
+
+                <img
+                    src="./images/hypixel_lobby.png"
+                    alt="Hypixel Lobby"
+                    class="w-full h-full -translate-y-1/6 blur-sm absolute opacity-20 z-8"
+                />
+            </div>
+
+            <div
+                class="w-full h-100 flex items-center justify-center overflow-hidden relative !border-2 !border-solid !border-pink-600"
+            >
+                <div
+                    class="absolute inset-0 bg-[linear-gradient(transparent_0%,rgba(230,0,118,0.01)_15%,rgb(230,0,118)_500%)] z-8"
+                ></div>
+
+                <div class="z-20 flex flex-col items-center justify-center">
+                    <img
+                        src="./images/mmc_logo.png"
+                        alt="MMC Logo"
+                        id="mmc"
+                        class="scale-48 hover:drop-shadow-[0_0_80px_rgba(230,0,118,0.5)] transition-all duration-500 ease-out will-change-transform"
+                    />
+
+                    <button
+                        id="mmcbtn"
+                        class="z-30 bg-[linear-gradient(transparent_0%,rgba(230,0,118,0.09)_50%,rgb(230,0,118)_500%)] !font-[500] cursor-pointer hover:brightness-150 hover:scale-115 !font-[Poppins] !text-[18px] !text-[#fffbc7] hover:-translate-y-3 !border-2 !border-solid !border-pink-600 !rounded-[12px] w-[210px] h-[60px] bg-transparent absolute top-[70%] opacity-0 invisible transition-all duration-500 ease-out"
+                    >
+                        Minemen Club Maps
+                    </button>
+                </div>
+
+                <img
+                    src="./images/mmc_lobby.png"
+                    alt="Minemen Club Lobby"
+                    class="w-full h-full -translate-y-1/6 blur-sm absolute opacity-20 z-8"
+                />
+            </div>
+
+            <script type="module" src="/src/index.ts"></script>
         </div>
     </body>
 </html>
